@@ -2,7 +2,7 @@
 #define MAX 100
 void prog();
 void reverse(char s[], int j);
-void getline(char s[], int limit);
+void getlinee(char s[], int limit);
 int atoi(char s[]);
 void itob(int n, char s[], int b);
 
@@ -45,10 +45,10 @@ void prog()
     char b_str[MAX];
     char str[MAX];
     printf("Enter the number n\n");
-    getline(n_str,MAX);
+    getlinee(n_str,MAX);
     n=atoi(n_str);
     printf("Enter the base b\n");
-    getline(b_str,MAX);
+    getlinee(b_str,MAX);
     b=atoi(b_str);
     switch (b){
         case 2:
@@ -115,7 +115,7 @@ void reverse(char s[], int j)
 }
 
 
-void getline(char s[], int limit)
+void getlinee(char s[], int limit)
 {
     int c,i;
     for (i=0; i<limit-1 && (c=getchar())!=EOF && c!='\n'; i++)

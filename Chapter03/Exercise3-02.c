@@ -4,7 +4,7 @@
 
 void escape (char s[], char t[]);
 void escape_inv (char s[], char t[]);
-void getline(char s[], int lim);
+void getlinee(char s[], int lim);
 
 int main()
 {
@@ -14,14 +14,14 @@ int main()
     while (1)
     {
         printf("Enter line\n");
-        getline(line,MAX);
+        getlinee(line,MAX);
         escape(line_vis,line);
         escape_inv(line,line_vis);
     }
     return 0;
 }
 
-void getline(char s[], int lim)
+void getlinee(char s[], int lim)
 {
     int i,c;
     for (i=0; i<lim-1 && (c=getchar())!=EOF && c!='\n'; i++)

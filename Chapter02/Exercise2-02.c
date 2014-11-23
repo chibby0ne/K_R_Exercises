@@ -1,5 +1,6 @@
 /*The exercise requires to implement the for loop in the function getlinee WITHOUT using && or || operators*/
 
+
 #include <stdio.h>
 
 #define MAXLINE 1000
