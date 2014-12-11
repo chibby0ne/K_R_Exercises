@@ -17,6 +17,7 @@ struct define {
 
 int IsBlank(char *s);
 void StringCopyNoBlanks(char *s, char *t);
+int getfield(char *s, char *beg, char *end);
 
 ///external variables
 
@@ -25,9 +26,9 @@ struct define *hashtab[MAXELEMENTS];
 int main(int argc, char *argv[])
 {
     char line[MAXLINE];
-    char_num = getline(line, MAXLINE);
+    int char_num = getline(line, MAXLINE);
 
-        ///better do and array of pointer
+    ///better do and array of pointer
 
     #define POINTERS 6
     #define NUM_FIELDS 3
@@ -82,7 +83,7 @@ char *SplitWords(char *line)
 
 void StringCopyNoBlanks(char *s, char *t)
 {
-    for (; !IsBlank(*s) && (*t = *s) != '\0'; s++, t++)
+    for (; !IsBlank(s) && (*t = *s) != '\0'; s++, t++)
             ;
 }
 

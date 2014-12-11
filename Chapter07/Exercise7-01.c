@@ -9,13 +9,13 @@
 
 int main(int argc, char *argv[])
 {
-
+    int i;
     if (argc == 1)
     {
         printf("No string to convert. Please run again and add string as command line argument\n");
         return -1;
     } else {
-        for (int i = 1; i != argc; i++) {
+        for (i = 1; i != argc; i++) {
             if (strcmp(argv[0], "./lower") == 0)
             {
                 //convert from Upper to lower case

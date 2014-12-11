@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 #include <limits.h>
 #define MAX 100
 
 void itoa(int n, char s[], int b);
+void reverse(char s[]);                  //reverses the order of the values of the elements in a array (string)
 
 int main()
 {

@@ -10,8 +10,9 @@ int isupperr(char c);
 int main(int argc, char *argv[])
 {
 
+    int i;
     char c = 'C';
-    for (int i = 0; i != COUNT; ++i) {
+    for (i = 0; i != COUNT; ++i) {
         //printf("C is %s\n", (isupperr(c)) ? "UPPER" : "lower");
         isupperr(c);
     }
